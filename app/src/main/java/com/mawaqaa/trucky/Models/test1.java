@@ -5,4 +5,5 @@ package com.mawaqaa.trucky.Models;
  */
 
 public class test1 {
+    int gsd ;
 }
