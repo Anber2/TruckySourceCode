@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E87C17</color>
+    <color name="colorPrimary_Pressed">#7ee87c17</color>
+    <color name="colorPrimaryDark">#E87C17</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="green">#90027606</color>
+    <color name="Black">#000000</color>
+    <color name="White">#FFFFFF</color>
+    <color name="red">#ec0e1f</color>
+    <color name="Blue">#ecededed</color>
+    <color name="green_fateh">#aa70c398</color>
+    <color name="sakany_fateh">#EFEFEF</color>
+    <color name="red_color">#ec0e1f</color>
+
+
+</resources>
