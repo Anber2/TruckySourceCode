@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mawaqaa.trucky.Activity.MainActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        tools:context=".activity.HomePlusMainActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:background="@color/White"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tool_bar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/find_truck"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/search_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/search_ic" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/LinearBottomBarLay"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <ImageButton
+                android:id="@+id/find_truck_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/find_station" />
+
+            <ImageButton
+                android:id="@+id/live_station_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/live_station_logo" />
+
+            <ImageButton
+                android:id="@+id/resturent_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/resturent" />
+
+            <ImageButton
+                android:id="@+id/myprofile_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/my_profile" />
+
+            <ImageButton
+                android:id="@+id/setting_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/setting" />
+        </LinearLayout>
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/LinearBottomBarLay"
+            tools:openDrawer="right"
+            android:layout_below="@+id/toolbarActionBar">
+
+            <LinearLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/LinearBottomBarLay"
+                android:layout_below="@+id/toolbarActionBar" />
+
+            <android.support.design.widget.NavigationView
+                android:id="@+id/nav_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:fitsSystemWindows="true"
+                app:itemTextColor="#ffffff"
+                android:background="@color/gray"
+                />
+
+        </android.support.v4.widget.DrawerLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

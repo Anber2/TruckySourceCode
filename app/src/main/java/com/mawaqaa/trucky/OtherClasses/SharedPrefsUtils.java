@@ -22,10 +22,11 @@ final public class SharedPrefsUtils {
      * @return The value from shared preferences, or null if the value could not be read.
      */
     public static String getStringPreference(Context context, String key) {
-        String value = null;
+        String value = "";
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
-        if (preferences != null) {
-            value = preferences.getString(key, null);
+        if (preferences != null)
+        {
+            value = preferences.getString(key, "");
         }
         return value;
     }

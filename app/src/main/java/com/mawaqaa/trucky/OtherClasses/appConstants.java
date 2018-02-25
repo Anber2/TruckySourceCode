@@ -22,13 +22,31 @@ public class appConstants
     public  static String userPassword_KEY="userPass";
     public  static String userType_KEY="userType";
     public  static String isLoggedIn="isloggedIn";
-
+    public static String languageKey = "languageKey";
+    public static String deviceToken_KEY = "deviceToken";
+    public static double curentLongtit = 0.0;
+    public static double curentLat = 0.0;
 
 
 
     public static final String email_pattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
-
-
+    public static String rest_image;
+    public static int rest_id;
+    public static String rest_cusione;
+    public static String rest_rate;
+    public static boolean rest_isFavorite;
+    public static int rest_truck;
+    public static int rest_station;
+    public static String rest_name;
+    public static String item_image;
+    public static int item_id;
+    public static String item_name;
+    public static String item_cusione;
+    public static String item_price;
+    public static int item_services;
+    public static String item_time_to_finish;
+    public static int appTimeOut = 6000;
+    public static int type_services;
 
 
     public static void hideSoftKeyboard(Activity activity) {

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#E87C17</color>
+    <color name="colorPrimary">#e37e13</color>
     <color name="colorPrimary_Pressed">#7ee87c17</color>
     <color name="colorPrimaryDark">#E87C17</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#e37e13</color>
 
+    <color name="gray">#4d4d4d</color>
+    <color name="bg">#8Dffffff</color>
     <color name="green">#90027606</color>
     <color name="Black">#000000</color>
     <color name="White">#FFFFFF</color>
@@ -13,6 +15,7 @@
     <color name="green_fateh">#aa70c398</color>
     <color name="sakany_fateh">#EFEFEF</color>
     <color name="red_color">#ec0e1f</color>
-
+    <color name="backgroundColor">#E8E8E0</color>
+    <color name="backgroundColorPress">#DBDBD3</color>
 
 </resources>

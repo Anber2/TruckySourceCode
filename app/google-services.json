@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "276867436058",
+    "firebase_url": "https://trucky-6cdfa.firebaseio.com",
+    "project_id": "trucky-6cdfa",
+    "storage_bucket": "trucky-6cdfa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276867436058:android:c67218d569064f21",
+        "android_client_info": {
+          "package_name": "com.mawaqaa.trucky"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "276867436058-auemtjr965ipsrfms3fcdl73tj6vf5ln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8xGxCgVc1Mh-WS-OcM5yeA7xN2pqraNY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

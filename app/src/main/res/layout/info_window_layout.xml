@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@android:color/transparent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/markerViewLayout"
+        android:layout_marginLeft="100dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="50dp"
+        android:background="@drawable/place_bg">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/logo"
+            android:layout_alignRight="@+id/logo"
+            android:layout_below="@+id/logo"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="ddddd"
+            android:textColor="@color/White" />
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="40dp"-->
+            <!--android:src="@drawable/resturent" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_below="@+id/imageView"-->
+            <!--android:layout_marginTop="28dp"-->
+            <!--android:text="njbjbhbh" />-->
+    </RelativeLayout>
+
+
+</RelativeLayout>

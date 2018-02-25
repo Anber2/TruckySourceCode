@@ -1,0 +1,198 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context="com.mawaqaa.trucky.Fragement.RestaurentMenuFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/box_wth_shadow"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="10">
+
+                <ImageView
+                    android:id="@+id/rest_img"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:orientation="vertical"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp">
+
+                    <TextView
+                        android:id="@+id/rest_name"
+                        style="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="0dp"
+                            android:text="@string/cusine_type" />
+
+                        <TextView
+                            android:id="@+id/cusine_typ_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="0dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/rest_rate"
+                        style="@style/Base.Widget.AppCompat.RatingBar.Indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="5dp"
+                        android:numStars="5" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/hand"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/fav_img"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:src="@drawable/favourite" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:src="@drawable/share2" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:src="@drawable/station" />
+
+                <TextView
+                    android:id="@+id/live_station_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center|left"
+                    android:padding="0dp"
+                    android:textColor="@color/White" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:src="@drawable/van" />
+
+                <TextView
+                    android:id="@+id/truck_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center|left"
+                    android:padding="0dp"
+                    android:textColor="@color/White" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/truck_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/box_wth_shadow"
+                    android:drawableRight="@drawable/dwn_arrow"
+                    android:gravity="center|left"
+                    android:paddingLeft="20dp"
+                    android:focusable="false"
+                    android:paddingRight="10dp"
+                    android:text="@string/trucks"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/truck_recy"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/station_btn"
+                    android:gravity="center|left"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/box_wth_shadow"
+                    android:drawableRight="@drawable/dwn_arrow"
+                    android:paddingLeft="20dp"
+                    android:focusable="false"
+                    android:paddingRight="10dp"
+                    android:text="@string/live_station"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/station_recy"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,191 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.mawaqaa.trucky.Fragement.MyProfileFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/add_address_new_title" />
+
+
+    <android.support.v4.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/box_wth_shadow_lg"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        tools:context="com.mawaqaa.trucky.Fragement.MyProfileFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/addAdrs_area_EdTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/text_field_lg"
+                    android:ems="10"
+                    android:hint="@string/area"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/addAdrs_adrsName_EdTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+
+                    android:background="@drawable/text_field_lg"
+                    android:ems="10"
+                    android:hint="@string/address_name_optional"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/addAdrs_block_EdTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+
+                    android:background="@drawable/text_field_lg"
+                    android:ems="10"
+                    android:hint="@string/block"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp" />
+
+
+                <EditText
+                    android:id="@+id/addAdrs_street_EdTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/text_field_lg"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="@string/street"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/addAdrs_avenu_EdTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/text_field_lg"
+                    android:ems="10"
+                    android:hint="@string/avenue_optional"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/addAdrs_building_EdTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/text_field_lg"
+                    android:ems="10"
+                    android:hint="@string/building"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/addAdrs_apartmntNo_EdTxtee"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+
+                    android:background="@drawable/text_field_lg"
+                    android:ems="10"
+                    android:hint="@string/apartement_no"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp" />
+
+
+                <EditText
+                    android:id="@+id/addAdrs_addiAdrs_EdTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/text_field_lg"
+                    android:ems="10"
+                    android:hint="@string/additional_direction"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/addAdrs_mobile_EdTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+
+                    android:background="@drawable/text_field_lg"
+                    android:ems="10"
+                    android:hint="@string/mobile"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/addAdrs_landLine_EdTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/text_field_lg"
+                    android:ems="10"
+                    android:hint="@string/land_line_no"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp" />
+
+
+
+                <Button
+                    android:id="@+id/addAdrs_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+
+                    android:background="@drawable/btn_lg"
+                    android:gravity="center"
+                    android:text="@string/save_address"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

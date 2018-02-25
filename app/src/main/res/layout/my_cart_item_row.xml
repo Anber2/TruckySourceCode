@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <com.daimajia.swipe.SwipeLayout xmlns:swipe="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        swipe:leftEdgeSwipeOffset="0dp"
+        swipe:rightEdgeSwipeOffset="0dp">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:tag="Bottom3"
+            android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/edite"
+                android:layout_width="27dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/pencil_round" />
+
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="27dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/delete_round" />
+
+            <!--<Button-->
+                <!--android:id="@+id/delete"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_weight="4"-->
+                <!--android:background="#ffffff"-->
+                <!--android:text="Yes,Delete"-->
+                <!--android:textColor="#FF5534" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:elevation="5dp"
+            android:orientation="horizontal"
+            android:weightSum="7">
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:id="@+id/position"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HARDEE'S"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:text="1 x CHICKEN FILLET"
+                    android:layout_marginLeft="5dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="2.500 KD"
+                        android:layout_marginLeft="5dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ADD ONS"
+                    android:layout_marginLeft="5dp"
+                     />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:text="2 x Swiss Cheese"
+                        android:layout_marginLeft="5dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="0.500 KD"
+                        android:layout_marginLeft="5dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:text="1 x American Cheese"
+                        android:layout_marginLeft="5dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="0.500 KD"
+                        android:layout_marginLeft="5dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:text="1 x Paper Jack"
+                        android:layout_marginLeft="5dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="2.500 KD"
+                        android:layout_marginLeft="5dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subtotal"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="2.500 KD"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorPrimaryDark"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_data"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:tag="Hover">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lft_wht_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.daimajia.swipe.SwipeLayout>
+</LinearLayout>

@@ -1,18 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
     tools:context="com.mawaqaa.trucky.Activity.SplashActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Trucky"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"/>
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="175dp">
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/splash_hand"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/locate"
+                    android:textColor="@color/colorPrimary"/>
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order"
+                    android:textColor="@color/White"/>
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pick_up"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/english"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="EN"
+                    android:gravity="center"
+                    android:textColor="@color/White"
+                    android:textStyle="bold"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/langage_bg" />
+
+                <TextView
+                    android:id="@+id/arabic"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="AR"
+                    android:gravity="center"
+                    android:textColor="@color/White"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/langage_bg" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="fitEnd"
+        android:src="@drawable/splash_hand_btm"
+       android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

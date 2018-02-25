@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/setting_lg" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/user_name"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Mohammad Ali"
+            android:textColor="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:id="@+id/menu_my_order"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/my_orders_ic" />
+
+            <TextView
+                android:id="@+id/txt_home"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/my_orders"
+                android:textColor="@color/White" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:id="@+id/menu_my_profile"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/my_profile_ic" />
+
+            <TextView
+                android:id="@+id/txt_about_app"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/my_profile"
+                android:textColor="@color/White" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:id="@+id/menu_noti"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/notification_ic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/notification"
+                android:textColor="@color/White" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:id="@+id/menu_my_favorites"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/my_fav_ic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/my_favorites"
+                android:textColor="@color/White" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:id="@+id/menu_faqs"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/faqs_ic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/faqs"
+                android:textColor="@color/White" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:id="@+id/menu_contact_us"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/contact_us_ic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/contact_us"
+                android:textColor="@color/White" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:id="@+id/menu_terms_and_conditions"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/terms_ic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/terms_and_conditions"
+                android:textColor="@color/White" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:id="@+id/menu_language"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/language_ic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/language"
+                android:textColor="@color/White" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                android:src="@drawable/language_ic" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="left"
+
+                >
+                <RadioButton
+                    android:id="@+id/eng_check_box"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/White"
+                    android:layout_height="wrap_content"
+                    android:text="@string/en"
+                    android:layout_gravity="center"
+                    android:button="@drawable/check_box_lang"
+                    android:checked="true"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/ar_check_box"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/White"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ar"
+                    android:layout_gravity="center"
+                    android:button="@drawable/check_box_lang"
+                    android:layout_marginLeft="15dp"
+                    />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:id="@+id/menu_social"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/social_ic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/social"
+                android:textColor="@color/White" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:id="@+id/menu_logout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/logout_ic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/logout"
+                android:textColor="@color/White" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

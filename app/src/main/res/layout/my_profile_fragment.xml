@@ -1,0 +1,172 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/box_wth_shadow_lg"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        tools:context="com.mawaqaa.trucky.Fragement.MyProfileFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/profile_fName_EdTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/text_field_lg"
+                    android:drawableLeft="@drawable/login_drawable_left_username"
+                    android:ems="10"
+                    android:hint="@string/no_data"
+                    android:inputType="text"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/profile_lName_EdTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/text_field_lg"
+                    android:drawableLeft="@drawable/login_drawable_left_username"
+                    android:ems="10"
+                    android:hint="@string/no_data"
+                    android:inputType="text"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/profile_email_EdTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/text_field_lg"
+                    android:drawableLeft="@drawable/forget_pass_drawable_left_email"
+                    android:ems="10"
+                    android:hint="@string/no_data"
+                    android:inputType="textEmailAddress"
+                    android:textSize="14dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/text_field_lg"
+                    android:orientation="horizontal">
+
+
+                    <RadioGroup
+                        android:id="@+id/profile_gendor_radiogr"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <RadioButton
+                            android:id="@+id/profile_male_radioBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_button_selector"
+                            android:text="@string/male" />
+
+                        <RadioButton
+                            android:id="@+id/profile_female_radioBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_button_selector"
+                            android:text="@string/female" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/profile_date_EdTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/text_field_lg"
+                    android:drawableLeft="@drawable/register_drawable_left_date"
+                    android:drawableRight="@drawable/register_drawable_left_date_arrow"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="@string/no_data"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/profile_phone_EdTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/text_field_lg"
+                    android:drawableLeft="@drawable/register_drawable_left_phone"
+                    android:ems="10"
+                    android:hint="@string/no_data"
+                    android:inputType="phone"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/profile_pass_EdTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/text_field_lg"
+                    android:drawableLeft="@drawable/register_drawable_left_pass"
+                    android:ems="10"
+                    android:hint="@string/no_data"
+                    android:inputType="textPassword"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/profile_re_pass_EdTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/text_field_lg"
+                    android:drawableLeft="@drawable/register_drawable_left_pass"
+                    android:ems="10"
+                    android:hint="@string/register_pass_re_hint"
+                    android:inputType="textPassword"
+                    android:textSize="14dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/profile_edit_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/btn_lg"
+                    android:gravity="center"
+                    android:text="@string/profile_edit_btn"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/profile_checkAddress_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/btn_lg"
+                    android:gravity="center"
+                    android:text="@string/profile_check_address_btn"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
